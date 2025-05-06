@@ -30,8 +30,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         // Set expected signature here
-        val expectedSignature = "MIIC5DCCAcwCAQEwDQYJKoZIhvcNAQEFBQAwNzEWMBQGA1UEAwwNQW5kcm9pZCBEZWJ1ZzEQMA4GA1UECgwHQW5kcm9pZDELMAkGA1UEBhMCVVMwIBcNMjQwMzE2MTAzODM5WhgPMjA1NDAzMDkxMDM4MzlaMDcxFjAUBgNVBAMMDUFuZHJvaWQgRGVidWcxEDAOBgNVBAoMB0FuZHJvaWQxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAneCEI25z2y9kuBSxl6d59dfqqA4r1E15MaVurlsOJRFw7XQSY6xYXz09gabeMjUnUfEgPX4E13Hr0ka931PZ80cKf69vp++OJH1IeRIpFT2qydwVflUujzH+2l6HOhQSLhGSTf5BZEY6XoyvqGk7/qww4Wyfr4i8u74ACmTBdY7XcXEQdaf/SBbBFlr9JwJuWr8w0A76WcUCLsTPn/vEabKkswt+84Wapkd73Nvgou63n1Z5i04iJI3qUIXaaSjlgHKh3B7ot1w0Xl/7vN5izINT3Yr5dJDHp4TUYbUzJq3poBC6v+983Cwr+/WrPuygu/AVir43NTXGWeaxeF7ObQIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQAKh38nXRSA8GHVU5DjUJVYIyYgWxKigKxm4hpvcCfYS5kpNsDhjaLPVudgNgS5W1tkoxE3PnelpwkncT+HEtV35utbKLa8xZJnhPHjZ4rxxhXq/1JnacoUJLJKnxM/PVdfgaCXD4JIbHLNhYmxNYcwv/l3B86pn4UFQgenWa45lRJxh/pYW+Sbduf4++7B0L3UVe1ChvNUtcGtqbf7qADQFmoEufgIY2LgJl/mAU21WOl2PqjXmpMDtnHzOqUap5hMjMigDdiC8boBHhCHyXfBy6WQWLYUPG7WMgvyoZJfmrsvVpUOjbfaXVlCKsQqVrdoJtVgyQv2Uip4zaVMG5Vf"
-        val expectedSignatureSHA256 = "7f4cf33b4d2953d996f9dfd400ed8f8f89046cc6e023d0f33e86daa4b91e56d3"
+        val expectedSignature = "<you can get it by first getting the raw vertificate with sigtool's toCharsString, then putting it in Cyberchef with recipe: From Hex -> To Base64>"
+        val expectedSignatureSHA256 = "<shown by sigtool>"
 
         // State to hold signature check result
         var signatureValid by mutableStateOf(false)
